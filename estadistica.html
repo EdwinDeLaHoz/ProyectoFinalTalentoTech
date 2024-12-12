@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transición Energética Justa</title>
+    <link rel="stylesheet" href="estadistica.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="header_title">
+      <h1>Transición Energética Justa</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Regresar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    
+      <section class="energy-container">
+        <section>
+          <div class="estadisticas" id="estadisticas"> <!-- Sección de Estadísticas -->
+            <h2>Estadísticas Globales</h2>
+            <p>Haz clic en el botón para visualizar Estadísticas Relevantes:</p>
+            <button class="button1" id="mostrarEstadisticas">Mostrar estadísticas</button>
+            <div id="dato"></div> <!-- Estadísticas se generarán con JavaScript -->
+          </div>
+        </section>
+
+          <section class="dashboard" id="dashboard">
+            <h2>Producción y Consumo de Energía Renovable</h2>
+            <div class="test">
+              
+                <canvas  class="plot" id="graficoTorta"></canvas>
+              
+                <canvas class="plot" id="graficoBarras"></canvas>
+              
+                <canvas class="plot" id="graficoLineas"></canvas>
+              
+                <canvas class="plot" id="graficoArea"></canvas>
+             
+            </div>
+          </section> 
+      </section>
+      <a href="estadistica.html">Volver al Inicio</a>
+    </main>
+
+    <footer class="final">
+      <p>&copy;2024. Proyecto de Transición Energética Justa. <br>
+        Mi sitio web. Todos los derechos reservados <span><a href="Mail:edelahoz22@gmail.com">edelahoz22@gmail.com</a></span>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

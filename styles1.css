@@ -1,0 +1,206 @@
+/* Estilos Globales */
+.body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a1a8a2f6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    background-image: url('assets/Imagen1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(8, 8, 8);
+    padding: 0px;
+    height: 300px;
+    text-align: center;
+}
+
+.header_title{
+  font-size: 90px;
+}
+
+.navbar ul {
+    list-style: none;
+    }
+
+.navbar ul li {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    }
+
+main {
+    padding: 1rem;
+    background: linear-gradient(to top, #4c7739, #5b8508); /*Color fondo pagina*/
+}
+
+.main-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 60px 60px;
+  font-weight: 700;
+  color: #ccc;
+}
+
+/* Flashcards config*/
+.contexto .flashcards {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .flashcard {
+    position: relative;
+    width: 200px; /* Reducido */
+    height: 240px; /* Reducido */
+    perspective: 1000px;
+  }
+  
+  .flashcard div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(12, 12, 12, 0.2);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .card-front {
+    background-color: #0a360d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-front img {
+    width: 150px; /* Reducido */
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .card-front h3 {
+    font-size: 18px; /* Reducido */
+  }
+  
+  .card-back {
+    background-color: #0a360d;
+    color: #e6e8f0;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 18px; /* Reducido */
+  }
+  
+  /* Efecto de voltear */
+  .flashcard:hover .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard:hover .card-back {
+    transform: rotateY(0);
+  }
+  
+  /* Rotación al hacer clic o tocar */
+  .flashcard.is-flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard.is-flipped .card-back {
+    transform: rotateY(0);
+  }
+
+  h2{
+    color: white;
+    text-align: center;
+  }
+
+.groupestcont { /*estadistica-contacto*/
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 80px 0px;
+}
+
+.main-statistics { /* Estadísticas */
+    margin-top: 50px;
+    text-align: left;
+}
+
+.main-contact { /* Contacto */
+    margin-top: 2rem;
+    background: linear-gradient(to top, #5b8b5b, #024107);
+    padding: 1rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: #ccc;
+}
+
+.main-contact-title {
+    margin-bottom: 1rem;
+    color: #ccc;
+    text-align: center;
+}
+
+.main-contact-form {
+    display: flex;
+    flex-direction: inherit;
+    gap: 1rem;
+    }
+
+.main-contact-label {
+    font-weight: bold;
+    color: #f5eeee;
+}
+
+.main-contact-button {
+    background-color: #074207;
+    color: rgba(214, 221, 212, 0.918);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.charts-container { /*Grafica*/
+  width: 400px;
+  background: linear-gradient(to top, #9be979, #e0e2db);
+  color: #eeeaea;
+  text-align: center;
+  }
+
+.final {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to top, #4c7739, #5b8508);
+  }
+

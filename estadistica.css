@@ -1,0 +1,123 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4c9720d7;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/Imagen1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(8, 8, 8);
+    padding: 0px;
+    height: 300px;
+    text-align: center;
+}
+
+.header_title{
+    font-size: 30px;
+  }
+
+.navbar ul {
+    list-style: none;
+    }
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    font-size: 30px;
+    font-weight: 900;
+    }
+
+    main {
+        padding: 1rem;
+        background: linear-gradient(to top, #4c7739, #5b8508);/*Color fondo pagina*/
+    }
+
+.energy-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.estadisticas, .dashboard {
+    background-color: rgb(184, 224, 180);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.932);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.dashboard {
+    display: inherit;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    padding: 1rem;
+    }
+
+.test{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 90px;
+}
+
+.button1 {
+    background-color: #16700df1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: auto;
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+    background-color: #071803;
+}
+
+@media screen and (max-width: 1000px) {
+    .energy-container {
+        padding: 10px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+.final {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to top, #4c7739, #5b8508);
+    }
+
+.plot {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* Añade transiciones suaves */
+    box-shadow: 6px 6px 6px 6px rgba(67, 173, 25, 0.271); /* Sombra sutil */
+    }
+
+.plot:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1); /* Sombra sutil */
+}

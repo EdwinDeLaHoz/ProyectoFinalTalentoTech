@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transición Energética Justa</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="principales">
+            <h1 class="header_title">Transición Energética Justa</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="estadistica.html">Estadísticas</a></li>
+                    <li><a href="#cont">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+<p class="main-text">La Transición Energética Justa es un proceso global que busca transformar los sistemas energéticos hacia fuentes renovables, garantizando que esta transformación beneficie tanto al medio ambiente como a las comunidades económicamente dependientes de la industria energética tradicional. Su objetivo principal es minimizar el impacto social y económico negativo en trabajadores y regiones mientras se avanza hacia una economía más sostenible y baja en carbono.</p>
+
+        <section class="contexto" id="Inicio">
+            <div class="introduccion">
+              
+            <div class="flashcards">
+               <div class="flashcard"> <!-- Energia Solar -->
+                <div class="card-front">
+                  <h3>Energia Solar</h3>
+                  <img src="assets/panel-solar.png" alt="Energía Solar"/>
+                </div>
+                <div class="card-back">
+                  <p>
+                    Es la energía obtenida directamente de la radiación del sol. 
+                    Se puede aprovechar mediante paneles solares fotovoltaicos (para generar electricidad)
+                    o paneles térmicos (para calentar agua y espacios).
+                  </p>
+                </div>
+              </div>
+    
+               <div class="flashcard"> <!-- Eólica -->
+                <div class="card-front">
+                  <h3>Energia Eólica</h3>
+                  <img src="assets/turbina-eolica.png" alt="Energía Eólica" />
+                </div>
+                <div class="card-back">
+                  <p>
+                    Se genera mediante el aprovechamiento del viento a través de turbinas eólicas,
+                    que convierten la energía cinética del viento en electricidad.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="flashcard"> <!-- Biocombustible -->
+                <div class="card-front">
+                  <h3>Energia Biocombustible</h3>
+                  <img src="assets/biocombustible.png" alt="Biocombustible" />
+                </div>
+                <div class="card-back">
+                  <p>
+                    Es la energía obtenida de la materia orgánica, como residuos agrícolas, forestales o animales.
+                    La biomasa se quema o se procesa para generar electricidad, calor o biocombustibles.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="flashcard"> <!-- Hidroeléctrica -->
+                <div class="card-front">
+                  <h3>Energia Hidroeléctrica</h3>
+                  <img src="assets/presa-hidroelectrica.png" alt="Energia Hidroeléctrica" />
+                </div>
+                <div class="card-back">
+                  <p>
+                    Se produce mediante el movimiento del agua,
+                    generalmente en ríos o presas, que acciona turbinas para generar electricidad.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="flashcard"> <!-- Geotérmica -->
+                <div class="card-front">
+                  <h3>Energia Geotérmica</h3>
+                  <img src="assets/geotermica.png" alt="Energía Geotérmica" />
+                </div>
+                <div class="card-back">
+                  <p>
+                    Es la energía obtenida del calor natural del interior de la Tierra.
+                    Se utiliza para generar electricidad o para calefacción directa.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+       
+        <div class="groupestcont">
+          
+          <section class="main-contact" id="cont"> <!-- Sección de Contacto -->
+              <h2 class="main-contact-title">Contacto</h2>
+              <form class="main-contact-form" id="contactForm">
+                  
+                  <label for="nombre" class="main-contact-label">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" class="main-contact-input" required>
+                  
+                  <label for="email" class="main-contact-label">Email:</label>
+                  <input type="email" id="email" name="email" class="main-contact-input" required>
+                  
+                  <label for="mensaje" class="main-contact-label">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" class="main-contact-textarea" required></textarea>
+                  
+                  <button type="submit" class="main-contact-button">Enviar</button>
+              </form>
+          </section>
+
+          <section class="main-contact" id="dashboard">
+            <h2>Visualización de Datos</h2>
+            <input type="file" id="archivoCSV" accept=".csv">
+            <button onclick="cargarDatos()">Generar Gráfica</button>
+            <canvas id="miGrafica"></canvas>
+          </section>     
+
+        </div>
+        
+        <p class="main-text">En nuestra vida diaria, a menudo pasamos por alto pequeñas acciones para cuidar el medio ambiente. Sin embargo, cada decisión que tomamos en casa puede contribuir significativamente a cuidar la salud de nuestro planeta.</p>
+      <a href="index.html">Volver al Inicio</a>
+
+    </main>
+    
+    <script src="script1.js"></script>
+
+    <footer class="final">
+      <p>&copy;2024. Proyecto de Transición Energética Justa. <br>
+        Mi sitio web. Todos los derechos reservados <span><a href="Mail:edelahoz22@gmail.com">edelahoz22@gmail.com</a></span>
+      </p>
+    </footer>
+
+</body>
+</html>
